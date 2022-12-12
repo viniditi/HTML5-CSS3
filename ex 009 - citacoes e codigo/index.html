@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p><!--A fonte monoespaçada deixa as letras com o mesmo tamanho, isso a torna boa para ler códigos.-->
+    <pre>
+        <code>
+num = int(input('Diigte um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+        </code><!--A tag "code" não faz a identação do código.-->
+    </pre><!--A tag "pre" faz a identação. A tag pre também não ignora os espaços e os enters que eu der no código, ele basicamente faz a mesma coisa que a tag "br" faz e um pouco mais.-->
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p><!--A tag "q" é usado para uma citação sem quebras.-->
+    <h2>Citações completas</h2>
+    <p>Segundo Eva Heller, no seu livro Psicologia das cores:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/A_Psicologia_das_cores/Zl1lEAAAQBAJ?hl=pt-BR&gbpv=1">
+        Somente 1% dentre homens e mulheres citaram o marrom como cor predileta. Com nenhuma outra cor houve uma rejeição tão forte.
+    </blockquote><!--A tag "blockquote" é usada para citações um pouco maiores, já que ele tem um espaço da parede até o texto. O parâmetro "cite" é para citar o link do livro ou o local onde eu encontrei e o site de busca vai saber que eu estou referenciando o link.-->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>. Estou adorando!</p><!--Basicamente, a tag "abbr", quando eu coloco o mouse em cima da palavra abreviada, ela mostra o nome completo da abreviação.-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas no HTML</bdo></p><!--A tag "bdo" inverte o texto (sei lá o motivo de o professor ter mostrado isso).-->
+</body>
+</html>
