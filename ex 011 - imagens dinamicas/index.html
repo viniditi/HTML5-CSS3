@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em  HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--A menor imagem tem que sempre ser colocada em primeiro de todas as outras.-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--"max" e "min" no "media" significa máximo e mínimo respectivamente.
+        O número 1000px, vai carregar a foto grande, que tem 1000 de altura e largura (mas é bom colocar, pelo menos, 50 defolga para não aparecer a barra de rolagem lateral); mas se carregar menos doo que o número indicado, ele vai carregar a foto que está em "srcset".
+        E no "type" tem que colocar o tipo de arquivo que a imagem é, nesse caso é uma png-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"><!--Sempre começe a usar a imagem grande ou pequena como primeira imagem.-->
+    </picture><!--Essa tag permite que a imagem crie vários sources-->
+</body>
+</html>
